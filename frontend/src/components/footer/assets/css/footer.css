@@ -1,0 +1,163 @@
+#footer {
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); 
+    /* bottom: -100%; */
+}
+
+#footer{
+    position:absolute;
+    height:250px;
+    background:rgb(238, 236, 146);
+}
+
+.footer-container{
+    position: relative;
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    background:rgb(238, 236, 146);
+}
+
+.logo-footer{
+    margin-right:100px;
+}
+
+.logo-footer p{
+   position:absolute;
+   display: flex;
+   justify-content: center;
+}
+
+
+.logo{
+    padding-top: 20px;
+    width: 100px !important;
+    height: 100px !important;
+    margin-left:50px;
+}
+
+.title{
+    color:var(--black-color);
+    font-size:20px !important;
+}
+
+
+.fanpage{
+    margin-left:100px !important;
+    margin-top:30px !important;
+    font-family: var(--teritary-font-family) !important;
+    margin-top:5px;
+}
+
+.container1{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title1{
+    font-family:var(--teritary-font-family);
+}
+
+.input{
+    position: relative;
+    background:linear-gradient(#fff,rgb(210, 208, 208));
+    padding: 8px;
+    width:350px;
+    border: 1px solid black;
+    font-family: var(--teritary-font-family);
+}
+
+
+
+.follow-us{
+    margin-top:30px;
+    margin-left:100px !important;
+}
+
+.title2{
+    font-family: var(--teritary-font-family);
+}
+
+.follow-us .bi{
+    margin-right:15px;
+    margin-top:10px;
+}
+
+.follow-us .anh1{
+    color:rgb(16, 16, 133);
+}
+
+.follow-us .anh2{
+    color:rgb(60, 5, 60);
+}
+
+.follow-us .anh4{
+    color:rgb(219, 10, 10);
+}
+
+.follow-us .anh3{
+    color:#127038;
+}
+
+.call-us{
+    margin-top:30px;
+    margin-left:100px !important;
+}
+
+.call-us .title3{
+    font-family: var(--teritary-font-family);
+}
+
+.call-us .title4{
+    margin-top:10px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: var( --teritary-font-family);
+}
+
+.call-us .bi-phone{
+    font-family: none !important;
+    margin-left: 0px;
+    color:#000;
+}
+
+.end{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top:0px;
+    background:rgb(238, 236, 146);
+    height:50px;
+}
+
+.end p{
+    font-family: var(--teritary-font-family);
+    margin-left:20px;
+    margin-top:10px;
+    font-weight: 800;
+}
+
+.title-logo-container{
+    font-family: var(--primary-font-family);
+    background-color: none !important;
+    font-size: 40px;
+}
+
+.homepage{
+    font-family: var(--teritary-font-family);
+    margin-top:20px;
+}
+
+.follow-us .bi{
+    font-size: 25px;
+}
+
+.title{
+    font-size: 30px;
+}

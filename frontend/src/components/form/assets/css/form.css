@@ -1,0 +1,21 @@
+.form-label {
+    color: var(--background-color)
+}
+.tour-recommend-title h2 {
+    font-size: 44px;
+    font-weight: 500;
+    font-family: var(--secondary-font-family);
+    letter-spacing: 2px;
+}
+.label p {
+    font-family: var(--teritary-font-family);
+    font-weight: 500 !important;
+}
+.form-label p {
+    font-family: var(--teritary-font-family);
+}
+.find-btn {
+    font-family: var(--secondary-font-family);
+    font-weight: 400 !important;
+    font-size: 24px
+}

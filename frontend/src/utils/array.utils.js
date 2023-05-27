@@ -1,0 +1,10 @@
+const spliceIntoChunk = (arr, chunkSize) => {
+    let res = [];
+    while(arr.length > 0) {
+        const chunk = arr.splice(0, chunkSize);
+        res.push(chunk);
+    };
+    return res;
+};
+
+export { spliceIntoChunk }

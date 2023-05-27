@@ -1,0 +1,35 @@
+.ctrl{
+    width:100%;
+}
+
+.notification{
+    z-index: 4;
+    display: none;
+    position: fixed;
+    top: 30px;
+}
+
+.animation-slide {
+    display: block;
+    animation-name: animate-slide;
+    animation-duration: 2.5s;
+}
+
+@keyframes animate-slide {
+    0% {
+      opacity: 0;
+      transform: translate(0, -30vh);
+    }
+    25% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, -30vh);
+    }
+}
