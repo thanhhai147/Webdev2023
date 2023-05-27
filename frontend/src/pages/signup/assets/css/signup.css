@@ -1,0 +1,46 @@
+.signup {
+    min-height: 100vh;
+    position: relative;
+}
+
+.background {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-image: url("../../../../../public/jpg/login-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foreground {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+    left: 17%
+}
+.signup-container {
+    height: 75%;
+}
+
+.signup-label {
+    font-size: 3.5rem;
+    font-family: var(--secondary-font-family);
+}
+
+.signup-sub-label {
+    color: var(--background-color);
+    font-family: var(--teritary-font-family);
+}
+
+.button{
+    font-family: var(--secondary-font-family) !important;
+    color: white !important;
+}

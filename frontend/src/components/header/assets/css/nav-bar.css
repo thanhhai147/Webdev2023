@@ -1,0 +1,113 @@
+#navbar{
+    position: absolute;
+    transition: none;
+    background: var(--primary-blur-color);
+}
+
+.navbar {
+    margin-top:20px !important;
+}
+
+header {
+    background: var(--background-color) !important;
+    z-index: 2;
+    width: 100%;
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    font-size: 30px;
+    font-family: var(--primary-font-family) !important;
+    margin-top: 0px;
+    letter-spacing: 0px;
+    left:-5px !important;
+}
+
+@media only screen and (max-width: 991px) {
+    #navbarNav {
+        position: absolute;
+        background-color: var(--background-color);
+        box-shadow: 2px 2px 3px 2px rgba(0,0,0,.15);
+        padding: 0.75rem;
+        top: 3rem;
+        z-index: 10;
+        margin-top: 1rem;    
+        animation-name: animate-slide-2;
+        animation-duration: 0.75s;
+        font-family: var(--secondary-font-family) !important;
+    }
+    @keyframes animate-slide-2 {
+        0% {
+          opacity: 0;
+          transform: translate(0vw, -10vh);
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+    }
+    .nav-item {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .nav-item:hover {
+        background-color: var(--primary-color) !important;
+    }
+    .nav-item:hover > .nav-link{
+        color: white !important
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .nav-link {
+        transition: var(--blur-transition);
+    }
+    .nav-link:hover {
+        color: var(--primary-blur-color) !important
+    }
+}
+
+.me-2{
+    width: 45px !important;
+    height:45px !important;
+    font-family: var(--secondary-font-family);
+    margin-top:-3px;
+}
+
+ .logo-title{
+    font-family: var(--primary-font-family);
+    font-size: 25px;
+ }
+
+
+ #navbarNav{
+    display: flex !important;
+    justify-content: flex-end!important;
+ }
+
+ .function{
+    position: relative;
+    width:auto;
+    justify-content: space-between !important;
+    margin-right:50px;
+ }
+
+ .fashion-showcase{
+    color: var(--primary-color) !important;
+    font-size: 30px;
+    font-family: var(--primary-font-family) !important;
+    margin-top: 0px;
+    letter-spacing: 0px;
+    margin-left:50px;
+ }
+
+ .map-view{
+    color: var(--primary-color) !important;
+    font-size: 30px;
+    font-family: var(--primary-font-family) !important;
+    margin-top: 0px;
+    letter-spacing: 0px;
+ }
+
+
+

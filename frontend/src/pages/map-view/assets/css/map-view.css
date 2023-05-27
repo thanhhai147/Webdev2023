@@ -1,0 +1,80 @@
+.map-container {
+    height: 60vh;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.region-line > hr {
+    width: 100%;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primary-color);
+    opacity: 1;
+}   
+.region-label {
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    font-family: var(--secondary-font-family);
+}
+.icon-marker {
+    background-image: url('../img/location.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.mapboxgl-popup-tip {
+    opacity: .7;
+}
+.mapboxgl-popup-content {
+    opacity: .7;
+}
+.marker-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--background-color);
+    opacity: 1 !important;
+}
+.tour-showcase-container {
+    height: 50vh;
+}
+.tour-showcase-wrapper {
+
+}
+.tour-showcase-title {
+    font-size: 44px;
+    font-weight: 500;
+    font-family: var(--secondary-font-family);
+    letter-spacing: 2px;
+}
+.overflow {
+    overflow-y: unset;
+    overflow-x: scroll;
+}
+.one-step-container {
+    font-family: var(--teritary-font-family);
+}
+.one-location-container {
+    border: 2px var(--primary-color) solid;
+    height: 200px;
+}
+.line {
+    border: 2.5px solid var(--background-color)
+}
+.modal-title {
+    font-size: 44px;
+    font-weight: 500;
+    font-family: var(--secondary-font-family);
+    letter-spacing: 2px;
+
+}
+
+.modal-body {
+    font-family: var(--teritary-font-family);
+}
+
+.modal-location-name {
+    font-size: 30px
+}

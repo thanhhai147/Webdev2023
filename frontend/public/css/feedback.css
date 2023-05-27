@@ -1,0 +1,26 @@
+.ctrl{
+    width:100%;
+}
+
+.notification{
+    z-index: 4;
+    display: block;
+    position: fixed;
+    top: 30px;
+}
+
+.animateOpen{
+    -webkit-animation:moveOpen 2s;
+    -webkit-animation-iteration-count: initial;
+    -webkit-animation-fill-mode: forwards;
+}
+/* Safari and Chrome */
+@-webkit-keyframes moveOpen {
+    from {-webkit-transform: translate(0,-100px);}
+    10% {-webkit-transform: translate(0,20px);}
+    12% {-webkit-transform: translate(0,22px);}
+    16% {-webkit-transform: translate(0,20px);}
+    80% {-webkit-transform: translate(0,20px);}
+    85% {-webkit-transform: translate(0,25px);}
+    to {-webkit-transform: translate(0,-100px);}
+}
