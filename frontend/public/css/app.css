@@ -1,11 +1,13 @@
 :root {
-    --primary-color: #968436;
-    --secondary-color: #FAFCFE;
-    --background-color: #0B2C39;
+    --primary-color:#114647;
+    --secondary-color:#e3ee1b;
+    --teritary--color:#968436;
+    --background-color:#fafafa;
     --grey-color: #9b9b9b;
     --white-color: #FAFCFE;
     --bold-grey-color: #777777;
     --red-color: #c90927;
+    --black-color:
     --shadow: 2px 2px 3px 2px rgba(21, 20, 20, 0.15);
     --slight-border: 1px solid #ced4da;
     --primary-border: 1px solid var(--primary-color);
@@ -17,8 +19,8 @@
     --primary-blur-color: var(--primary-color) !important;
     --secondary-blur-color: var(--secondary-color) !important;
     --primary-font-family:'Arizonia', cursive;
-    --secondary-font-family:'Carattere', cursive;
-    --teritary-font-family:'Sriracha', cursive;
+    --secondary-font-family:'Roboto Serif', serif;
+    --teritary-font-family:'Roboto Serif', serif;
 }
 
 

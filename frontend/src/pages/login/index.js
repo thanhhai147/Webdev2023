@@ -95,14 +95,14 @@ const Login = () => {
                             {validation && <div className={`${validation.password.status}-feedback`}>{firstLetterToUppercase(validation.password.message)}</div>}
                         </div> 
                         <div className="col-12 d-grid ">
-                            <button type="submit" onClick={submitUser} className="btn btn-primary btn-lg btn-block mb-3 rounded-5 w-100 primary-bg-color background-color no-border css-login button-login">Đăng Nhập</button>
+                            <button type="submit" onClick={submitUser} className=" btn-lg btn-block mb-3 rounded-5 w-100 no-border css-login button-login">Đăng Nhập</button>
                         </div>
                     </form>
                     <hr className="m-0" />
                     <div className="row">
                         <div className="col-12 d-grid">
                             <Link to={"/signup"}>
-                                <button type="button" className="btn btn-custom btn-lg  mt-4 w-100 rounded-5 background-color white-color button-signup">
+                                <button type="button" className="btn-lg  mt-4 w-100 rounded-5  button-signup">
                                     Đăng Ký
                                 </button>
                             </Link>

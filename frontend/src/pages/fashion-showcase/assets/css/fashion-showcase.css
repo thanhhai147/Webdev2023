@@ -10,7 +10,7 @@
     font-size: 45px;
     width:1040px;
     font-weight: 700;
-    font-family: var(--secondary-font-family);
+    font-family:var(--teritary-font-family);
     /* display: flex;
     justify-content: flex-start; */
     color:var(--primary-color);
@@ -166,7 +166,7 @@
     opacity: .6;
     transform: translate(0,-50%);
     display: none;
-    font-family: 'Sriracha', cursive;
+    font-family:var(--teritary-font-family);
     cursor: pointer;
 }
 
@@ -176,8 +176,8 @@
 }
 
 .item .name{
-    font-size: 40px;
-    font-weight: bolder;
+    font-size: 30px;
+    font-weight:bold;
     color:#000000;
     opacity: 0;
     animation:showcontent 1s ease-in-out 1 forwards;
@@ -188,19 +188,18 @@
     opacity: 0;
     animation:showcontent 1.5s ease-in-out 0.3s 1 forwards;
     color:#000000; 
-    font-size:18px;
+    font-size:20px;
     font-weight: 600;
     margin-top:10px;
 }
-
 
 .item .history{
     margin:0px 0;
     opacity: 0;
     animation:showcontent 2s ease-in-out 0.3s 1 forwards;
     color:#000000 !important;
-    font-weight:600;
-    font-size:14px;
+    font-weight:100;
+    font-size:16px;
     margin-top:10px;
 }
 

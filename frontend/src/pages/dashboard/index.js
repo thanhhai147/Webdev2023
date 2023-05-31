@@ -27,17 +27,17 @@ export default function Dashboard() {
     
     return (
         <motion.div exit={{opacity: 0}}>  
-            <div className="user-dashboard mt-5">
+            <div className="user-dashboard mt-3 --primary-color">
                 <div className="container">
-                    <div className="row d-flex w-100">
-                        <div className="user-container col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <div className="row d-flex w-100 container-user">
+                        <div className="user-container col-xl-4 col-lg-12 mt-5 mb-5">
                             <div className="user-wrapper element-bg-color fit-height p-5 rounded-5">
                                 <div className="avatar-container d-flex flex-row mb-5 ">
                                     <Avatar className="avatar"
                                         name={`${user.fullname.familyname} ${user.fullname.firstname}`} 
                                         maxInitials={Constant.AVATAR_MAX_INITIALS} 
                                         title="user-avatar" 
-                                        color={Constant.SECONDARY_COLOR='#968436'}
+                                        color={Constant.SECONDARY_COLOR='#114647'}
                                         size={Constant.AVATAR_SIZE_DEFAULT}
                                         textSizeRatio={Constant.AVATAR_TEXT_SIZE_RATIO}
                                     />
@@ -70,7 +70,7 @@ export default function Dashboard() {
                                     </div>
                                 </div>
                                 <div className="btn-container row">
-                                    <div className="col-xxl-12 col-xl-12 col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div className="col-xl-12 col-xl-12 btn ">
                                        <button className="log-out mb-3 rounded-5 mb-0 fs-5 w-100 no-border" onClick={logout}>Đăng Xuất</button>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@ export default function Dashboard() {
                         <div className="col-xxl-1 col-xl-1 col-lg-1"></div>
                         <div className="col">
                             <div className="row">
-                                <div className="tour-title mb-4 col-6 primary-color d-flex justify-content-center align-items-center">
+                                <div className="tour-title mb-4 col-6 primary-color d-flex justify-content-center mt-5 align-items-center">
                                     Lịch sử gợi ý chuyến đi
                                 </div>
                                 <div className="col-12">

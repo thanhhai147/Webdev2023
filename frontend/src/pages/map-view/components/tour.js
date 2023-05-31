@@ -8,7 +8,7 @@ export default function TourRender({ location, filter, setFilter, tour, setTour 
     const { setNotification } = useAppContext();
 
     return (
-        <div className="tour-container mt-5">
+        <div className="tour-container rounded-5 mt-5">
             <Form 
                 formState={filter}
                 setFormState={setFilter}

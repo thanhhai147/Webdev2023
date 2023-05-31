@@ -10,9 +10,8 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    background-image: url("../../../../../public/jpg/login-background.png");
+    background:url("../../../../../public/jpg/login-background.jpg");
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -28,6 +27,7 @@
 }
 .login-container {
     height: 75%;
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2);
 }
 
 .login-label {
@@ -35,7 +35,7 @@
 }
 
 .login-sub-label {
-    color: var(--background-color)
+    color: var(--black-color);
 }
 
 .title-login{
@@ -48,10 +48,17 @@
 
 .button-login{
     font-family: var(--secondary-font-family);
+    background: var(--primary-color);
+    color:var(--secondary-color) !important;
+    height:50px !important;
+    font-size: 20px;
 }
 
 .button-signup{
     font-family: var(--secondary-font-family);
-    color: var(--primary-color) !important;
+    background: var(--primary-color);
+    color:var(--secondary-color) !important;
+    height:50px !important;
+    font-size: 20px;
 }
 

@@ -6,8 +6,14 @@
 };
 
 .user-container{
-    background: var(--background-color) !important;
+    margin-top:30px !important;
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2) !important;
 }
+
+.user-wrapper{
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2) !important;
+}
+
 
 .avatar {
     border-radius: 50%;
@@ -32,8 +38,10 @@
 
 .log-out{
     background-color:var(--primary-color);
-    padding: 8px 16px 8px 16px;
     transition: none !important;
+    color:var(--secondary-color) !important;
+    height:50px !important;
+    font-size: 20px;
 }
 
 .btn{

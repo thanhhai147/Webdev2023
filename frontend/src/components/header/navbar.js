@@ -9,7 +9,7 @@ export default function NavBar({ user }) {
   const loginItem = () => (
     <div className="nav-item fw-500">
       <Link to={"/login"} className="nav-link">
-        Đăng Nhập
+       <button className="rounded-5">Đăng Nhập</button>
       </Link>
     </div>
   );
@@ -19,7 +19,7 @@ export default function NavBar({ user }) {
       <Link to={"/dashboard"} className="nav-link">
         <Avatar 
           name={`${user.fullname.familyname} ${user.fullname.firstname}`}
-          color={Constant.PRIMARY_COLOR="#968436"}
+          color={Constant.PRIMARY_COLOR="#114647"}
           maxInitials={Constant.AVATAR_MAX_INITIALS}
           // size={30}
           textSizeRatio={Constant.AVATAR_TEXT_SIZE_RATIO}

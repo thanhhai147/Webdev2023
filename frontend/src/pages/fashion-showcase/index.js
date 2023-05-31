@@ -47,7 +47,7 @@ export default function Homepage() {
                                 <div className="history">
                                 Trang phục phụ nữ người Việt cổ bao gồm khăn đội đầu (khăn vuông), khăn vấn tóc, yếm, thắt lưng, áo cánh, váy, áo tứ thân, áo năm thân.
                                 Chiếc yếm của phụ nữ là một miếng vải hình vuông khoét một góc tạo thành cổ, phần vải còn lại tạo thành chiếc yếm ở trước ngực làm đồ lót mặc sát người của phụ nữ Việt Nam. Yếm thường được may bằng lụa hoặc vải nõn sợi nhỏ hoặc vải quyến đủ các màu sắc trừ màu đen.
-                                Độ dài thắt lưng khoảng 1,5-2m, rộng chừng 15-20cm. Thắt lưng thường được dệt bằng lụa sồi, có độ dài quấn quanh người hai vòng mà vẫn còn dư ra một đoạn để có thể thắt nút giọt lệ, buông rủ dải thắt lưng xuống phía trước..
+                                Độ dài thắt lưng khoảng 1,5-2m, rộng chừng 15-20cm. Thắt lưng thường được dệt bằng lụa sồi, có độ dài quấn quanh người hai vòng mà vẫn còn dư ra một đoạn để có thể thắt nút giọt lệ.
                                 </div>
                             </div>
                         </div>
@@ -57,8 +57,8 @@ export default function Homepage() {
                                 <div className="des"><i className="fa-solid fa-period black-color"></i>Thời kì : Thời Trần-Thời Tiền Lê</div>
                                 <div className="history">
                                 Vải vóc nước ta thời đó thì có các loại the Cát Liễu, the hoa tim táo sợi thẳng, the hợp, lụa bóng bông, ỷ, lĩnh, là, hài tơ khá lạ mà tốt. Hai thứ gai, tơ chuối thì được chắp lại làm vải, mịn như lụa nõn, rất hợp mặc vào mùa hè.
-                                Trang phục dân tộc của phụ nữ được chia làm 2 giai đoạn. Từ thế kỷ 13-15 đặc trưng với áo có phần ống tay rộng, phần áo choàng có cổ áo khoét sâu rộng, bên trong mặc một chiếc yếm quây.Đầu nhà Lê, phần cổ áo đã được may kín đáo hơn với phần cổ tròn, ống tay gọn gàng hơn. Tuy nhiên, màu sắc lại có phần cầu kỳ và bắt mắt hơn.
-                                Phụ nữ cũng mặc áo đen, song áo trắng bên trong lộ rõ ra ngoài, ôm lấy cổ, rộng bốn tấc là khác biệt.
+                                Từ thế kỷ 13-15 đặc trưng với áo có phần ống tay rộng, phần áo choàng có cổ áo khoét sâu rộng, bên trong mặc một chiếc yếm quây.Đầu nhà Lê, phần cổ áo đã được may kín đáo hơn với phần cổ tròn, ống tay gọn gàng hơn. Tuy nhiên, màu sắc lại có phần cầu kỳ và bắt mắt hơn.
+                                Phụ nữ cũng mặc áo đen, song áo trắng bên trong lộ rõ ra ngoài.
                                 </div>
                             </div>
                         </div>
@@ -68,8 +68,8 @@ export default function Homepage() {
                                 <div className="des"><i className="fa-solid fa-period black-color"></i>Thời kì : Thời Trần-Thời Tiền Lê</div>
                                 <div className="history">
                                 Vải vóc nước ta thời đó thì có các loại the Cát Liễu, the hoa tim táo sợi thẳng, the hợp, lụa bóng bông, ỷ, lĩnh, là, hài tơ khá lạ mà tốt. Hai thứ gai, tơ chuối thì được chắp lại làm vải, mịn như lụa nõn, rất hợp mặc vào mùa hè.
-                                Trang phục dân tộc của phụ nữ được chia làm 2 giai đoạn. Từ thế kỷ 13-15 đặc trưng với áo có phần ống tay rộng, phần áo choàng có cổ áo khoét sâu rộng, bên trong mặc một chiếc yếm quây.Đầu nhà Lê, phần cổ áo đã được may kín đáo hơn với phần cổ tròn, ống tay gọn gàng hơn. Tuy nhiên, màu sắc lại có phần cầu kỳ và bắt mắt hơn.
-                                Phụ nữ cũng mặc áo đen, song áo trắng bên trong lộ rõ ra ngoài, ôm lấy cổ, rộng bốn tấc là khác biệt.
+                                Từ thế kỷ 13-15 đặc trưng với áo có phần ống tay rộng, phần áo choàng có cổ áo khoét sâu rộng, bên trong mặc một chiếc yếm quây.Đầu nhà Lê, phần cổ áo đã được may kín đáo hơn với phần cổ tròn, ống tay gọn gàng hơn. Tuy nhiên, màu sắc lại có phần cầu kỳ và bắt mắt hơn.
+                                Phụ nữ cũng mặc áo đen, song áo trắng bên trong lộ rõ ra ngoài.
                             </div>
                         </div>
                         </div>
@@ -89,7 +89,7 @@ export default function Homepage() {
                                 <div className="des"><i className="fa-solid fa-period black-color"></i>Thời kì : Thời Hậu Lê</div>
                                 <div className="history">
                                 Cho đến thời kỳ Hậu Lê mở màn Open nhiều kiểu trang phục khác nhau và những bộ váy áo đã bộc lộ được nét văn hóa truyền thống riêng. Những bộ trang phục của phụ nữ thời kỳ Hậu Lê rất kín kẽ với nhiều lớp áo mang nhiều sắc tố khác nhau. Đặc trưng nhất vẫn là phần ống tay rộng. Trang phục hầu gái ( hay quan hầu trong cung ) có áo cổ tròn, hoàn toàn có thể vạt áo tay dài hay ngắn, váy đơn hay xếp lớp, tay áo rộng hay hẹp …
-                                Trang phục hầu gái (hay quan hầu trong cung) có áo cổ tròn, có thể vạt áo tay dài hay ngắn, váy đơn hay xếp lớp, tay áo rộng hay hẹp...Trang phục hầu gái (hay quan hầu trong cung) có áo cổ tròn, có thể vạt áo tay dài hay ngắn, váy đơn hay xếp lớp, tay áo rộng hay hẹp...
+                                Trang phục hầu gái có áo cổ tròn, có thể vạt áo tay dài hay ngắn, váy đơn hay xếp lớp, tay áo rộng hay hẹp...
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ export default function Homepage() {
                                 <div className="des"><i className="fa-solid fa-period"></i>Thời kì : Thời Hậu Lê</div>
                                 <div className="history">
                                 Cho đến thời kỳ Hậu Lê mở màn Open nhiều kiểu trang phục khác nhau và những bộ váy áo đã bộc lộ được nét văn hóa truyền thống riêng. Những bộ trang phục của phụ nữ thời kỳ Hậu Lê rất kín kẽ với nhiều lớp áo mang nhiều sắc tố khác nhau. Đặc trưng nhất vẫn là phần ống tay rộng. Trang phục hầu gái ( hay quan hầu trong cung ) có áo cổ tròn, hoàn toàn có thể vạt áo tay dài hay ngắn, váy đơn hay xếp lớp, tay áo rộng hay hẹp …
-                                Trang phục hầu gái (hay quan hầu trong cung) có áo cổ tròn, có thể vạt áo tay dài hay ngắn, váy đơn hay xếp lớp, tay áo rộng hay hẹp...Trang phục hầu gái (hay quan hầu trong cung) có áo cổ tròn, có thể vạt áo tay dài hay ngắn, váy đơn hay xếp lớp, tay áo rộng hay hẹp...  
+                                Trang phục hầu gái có áo cổ tròn, có thể vạt áo tay dài hay ngắn, váy đơn hay xếp lớp, tay áo rộng hay hẹp...
                                 </div>                             
                             </div>
                         </div>
@@ -141,8 +141,8 @@ export default function Homepage() {
                             <button id="next" className="no-border ms-3"><i className="fa-solid fa-chevron-right"></i></button>
                         </div>  
                     </div>
-                </div>            
-            </div>
+                </div> 
+            </div>   
         </motion.div>
     );
 };

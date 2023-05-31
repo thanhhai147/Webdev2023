@@ -2,10 +2,7 @@
     position: absolute;
     transition: none;
     background: var(--primary-blur-color);
-}
-
-.navbar {
-    margin-top:20px !important;
+    height:20px;
 }
 
 header {
@@ -14,13 +11,21 @@ header {
     width: 100%;
 }
 
-.nav-link {
-    color: var(--primary-color) !important;
-    font-size: 30px;
-    font-family: var(--primary-font-family) !important;
-    margin-top: 0px;
-    letter-spacing: 0px;
+.nav-link button {
+    background:var(--primary-color) !important;
+    font-size: 18px;
+    font-family: var(--teritary-font-family) !important;
     left:-5px !important;
+    color:var(--secondary-color);
+    width:120px;
+}
+
+.nav-link{
+    font-size: 18px;
+    font-family: var(--teritary-font-family) !important;
+    left:-5px !important;
+    color:var(--primary-color);
+    width:200px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -77,6 +82,7 @@ header {
  .logo-title{
     font-family: var(--primary-font-family);
     font-size: 25px;
+    color:var(--primary-color);
  }
 
 
@@ -94,8 +100,8 @@ header {
 
  .fashion-showcase{
     color: var(--primary-color) !important;
-    font-size: 30px;
-    font-family: var(--primary-font-family) !important;
+    font-size: 20px;
+    font-family: var(--teritary-font-family) !important;
     margin-top: 0px;
     letter-spacing: 0px;
     margin-left:50px;
@@ -103,8 +109,8 @@ header {
 
  .map-view{
     color: var(--primary-color) !important;
-    font-size: 30px;
-    font-family: var(--primary-font-family) !important;
+    font-size: 20px;
+    font-family: var(--teritary-font-family) !important;
     margin-top: 0px;
     letter-spacing: 0px;
  }

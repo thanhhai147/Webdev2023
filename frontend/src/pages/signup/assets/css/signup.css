@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    background-image: url("../../../../../public/jpg/login-background.png");
+    background-image: url("../../../../../public/jpg/login-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,6 +28,7 @@
 }
 .signup-container {
     height: 75%;
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2);
 }
 
 .signup-label {
@@ -36,11 +37,14 @@
 }
 
 .signup-sub-label {
-    color: var(--background-color);
+    color: var(--teritary-color) !important;
     font-family: var(--teritary-font-family);
 }
 
 .button{
     font-family: var(--secondary-font-family) !important;
-    color: white !important;
+    background: var(--primary-color);
+    color:var(--secondary-color) !important;
+    height:50px !important;
+    font-size: 20px;
 }

@@ -9,7 +9,7 @@
     height: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--primary-color);
+    background-color: var(--white-color);
     opacity: 1;
 }   
 .region-label {
@@ -77,4 +77,16 @@
 
 .modal-location-name {
     font-size: 30px
+}
+
+.map-view-container{
+    background: var(--white-color);
+}
+
+.tour-container{
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2) !important;
+}
+
+.find-btn{
+    color:var(--secondary-color) !important;
 }

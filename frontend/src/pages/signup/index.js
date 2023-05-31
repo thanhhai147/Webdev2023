@@ -120,7 +120,7 @@ const Signup = () => {
                             {validation && <div className={`${validation.password.status}-feedback`}>{firstLetterToUppercase(validation.password.message)}</div>}
                         </div>
                         <div className="col-12 d-grid mt-3">
-                            <button type="submit" onClick={submitUser} className="btn btn-primary btn-lg btn-block mb-3 rounded-5 w-100 primary-bg-color no-border white-color button">Đăng Ký</button>
+                            <button type="submit" onClick={submitUser} className=" mb-5 rounded-5 w-100  no-border button mt-4 ">Đăng Ký</button>
                         </div>
                     </form>
                 </div>
