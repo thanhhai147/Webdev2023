@@ -42,13 +42,13 @@ import { useEffect } from "react";
 
 export default function Homepage() {
     useEffect(() => {
-        document.getElementById("next").onclick = function () {
-          let lists = document.querySelectorAll(".item");
-          document.getElementById("slide").appendChild(lists[0]);
+        document.getElementById("next1").onclick = function () {
+          let lists = document.querySelectorAll(".item0");
+          document.getElementById("slide1").appendChild(lists[0]);
         };
-        document.getElementById("prev").onclick = function () {
-          let lists = document.querySelectorAll(".item");
-          document.getElementById("slide").prepend(lists[lists.length - 1]);
+        document.getElementById("prev1").onclick = function () {
+          let lists = document.querySelectorAll(".item0");
+          document.getElementById("slide1").prepend(lists[lists.length - 1]);
         };
       }, []);
     return (
@@ -56,9 +56,9 @@ export default function Homepage() {
             <div className="container">
                 <div className="title-container">Trang Phục Việt Nam</div>
                 <hr className="line-title"/>
-                <div id="fashion-showcase" className="rounded-5">
-                    <div id="slide" className="rounded-5">
-                        <div className="item item11 rounded-5">
+                <div id="fashion-showcase1" className="rounded-5">
+                    <div id="slide1" className="rounded-5">
+                        <div className="item0 item-11 rounded-5">
                             <div className="content pt-3 pb-3 ps-4 pe-4 rounded-5">
                                 <div className="name">Áo Cổ Vòng<br></br>Vận Xà Rông</div>
                                 <div className="des"><i className="fa-solid fa-period"></i>Địa phương: dân tộc khmer</div>
@@ -67,7 +67,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item item1 rounded-5">
+                        <div className="item0 item-1 rounded-5">
                             <div className="content pt-3 pb-3 ps-4 pe-4 rounded-5">
                                 <div className="name">Bít Trôốc</div>
                                 <div className="des"><i className="fa-solid fa-period black-color"></i>Địa phương: dân tộc Mường</div>
@@ -76,7 +76,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item item2 rounded-5">
+                        <div className="item0 item-2 rounded-5">
                             <div className="content pt-3 pb-3 ps-4 pe-4 rounded-5">
                                 <div className="name"> Ao êkei</div>
                                 <div className="des"><i className="fa-solid fa-period black-color"></i>Địa phương: dân tộc Ê đê</div>
@@ -85,7 +85,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item item3 rounded-5">
+                        <div className="item0 item-3 rounded-5">
                             <div className="content pt-3 pb-3 ps-4 pe-4 rounded-5">
                                 <div className="name">Luy Hâu</div>
                                 <div className="des"><i className="fa-solid fa-period black-color"></i>Địa phương: dân tộc Khơ Mú</div>
@@ -95,7 +95,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item item4 rounded-5">
+                        <div className="item0 item-4 rounded-5">
                             <div className="content pt-3 pb-3 ps-4 pe-4 rounded-5">
                                 <div className="name">Aw Tah</div>
                                 <div className="des"><i className="fa-solid fa-period black-color"></i>Địa phương: dân tộc Chăm</div>
@@ -105,7 +105,7 @@ export default function Homepage() {
                             </div>
                         </div>
                         </div>
-                        <div className="item item5 rounded-5">
+                        <div className="item0 item-5 rounded-5">
                             <div className="content pt-3 pb-3 ps-4 pe-4 rounded-5">
                                 <div className="name">Áo Cóm<br />Váy Đen</div>
                                 <div className="des"><i className="fa-solid fa-period black-color"></i>Địa phương: dân tộc Thái</div>
@@ -115,7 +115,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item item6 rounded-5">
+                        <div className="item0 item-6 rounded-5">
                             <div className="content pt-3 pb-3 ps-4 pe-4 rounded-5">
                                 <div className="name">Áo Dài</div>
                                 <div className="des"><i className="fa-solid fa-period black-color"></i>Địa phương: dân tộc Kinh</div>
@@ -126,7 +126,7 @@ export default function Homepage() {
                             </div>
                         </div>
                         
-                        <div className="item item7 rounded-5">
+                        <div className="item0 item-7 rounded-5">
                             <div className="content pt-3 pb-3 ps-4 pe-4 rounded-5">
                                 <div className="name"></div>
                                 <div className="des"><i className="fa-solid fa-period"></i>Địa phương: dân tộc Nùng</div>
@@ -136,7 +136,7 @@ export default function Homepage() {
                                 </div>                             
                             </div>
                         </div>
-                        <div className="item item8 rounded-5">
+                        <div className="item0 item-8 rounded-5">
                             <div className="content pt-3 pb-3 ps-4 pe-4 rounded-5">
                                 <div className="name">Áo Chàm</div>
                                 <div className="des"><i className="fa-solid fa-period"></i>Địa phương: dân tộc Tày</div>
@@ -148,8 +148,8 @@ export default function Homepage() {
                             </div>
                         </div>
                         <div className="buttons d-flex justify-content-end pe-3">
-                            <button id="prev" className="no-border"><i className="fa-solid fa-chevron-left"></i></button>
-                            <button id="next" className="no-border ms-3"><i className="fa-solid fa-chevron-right"></i></button>
+                            <button id="prev1" className="no-border"><i className="fa-solid fa-chevron-left"></i></button>
+                            <button id="next1" className="no-border ms-3"><i className="fa-solid fa-chevron-right"></i></button>
                         </div>  
                     </div>
                 </div> 
