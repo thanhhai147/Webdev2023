@@ -154,9 +154,6 @@ a:hover {
     height: fit-content !important;
 }
 
-.fit-width {
-    width: fit-content !important;
-}
 
 .custom-range::-webkit-slider-thumb {
     background-color: #003058;

@@ -1,14 +1,26 @@
+<<<<<<< HEAD
 /* #footer {
+=======
+#footer {
+>>>>>>> 1243590e035fe23e3c7b17e9d0b71f4b81c379c7
     position: absolute;
     width: 100%;
     -webkit-transform: translateY(100%);
     transform: translateY(100%); 
+<<<<<<< HEAD
     /* bottom: -100%; 
+=======
+    /* bottom: -100%; */
+>>>>>>> 1243590e035fe23e3c7b17e9d0b71f4b81c379c7
 }
 
 #footer{
     position:absolute;
     height:250px;
+<<<<<<< HEAD
+=======
+    background:rgb(238, 236, 146);
+>>>>>>> 1243590e035fe23e3c7b17e9d0b71f4b81c379c7
 }
 
 .footer-container{
@@ -18,7 +30,11 @@
     display: flex;
     justify-content:space-around;
     flex-direction: row;
+<<<<<<< HEAD
     background:rgb(255, 255, 255);
+=======
+    background:rgb(238, 236, 146);
+>>>>>>> 1243590e035fe23e3c7b17e9d0b71f4b81c379c7
 }
 
 .logo-footer{
