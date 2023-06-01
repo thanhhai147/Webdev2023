@@ -1,13 +1,22 @@
 :root {
+<<<<<<< HEAD
     --primary-color:#114647;
     --secondary-color:#e3ee1b;
     --teritary--color:#968436;
     --background-color:#fafafa;
+=======
+    --primary-color: #968436;
+    --secondary-color: #FAFCFE;
+    --background-color: #0B2C39;
+>>>>>>> 1243590e035fe23e3c7b17e9d0b71f4b81c379c7
     --grey-color: #9b9b9b;
     --white-color: #FAFCFE;
     --bold-grey-color: #777777;
     --red-color: #c90927;
+<<<<<<< HEAD
     --black-color:
+=======
+>>>>>>> 1243590e035fe23e3c7b17e9d0b71f4b81c379c7
     --shadow: 2px 2px 3px 2px rgba(21, 20, 20, 0.15);
     --slight-border: 1px solid #ced4da;
     --primary-border: 1px solid var(--primary-color);
@@ -19,8 +28,13 @@
     --primary-blur-color: var(--primary-color) !important;
     --secondary-blur-color: var(--secondary-color) !important;
     --primary-font-family:'Arizonia', cursive;
+<<<<<<< HEAD
     --secondary-font-family:'Roboto Serif', serif;
     --teritary-font-family:'Roboto Serif', serif;
+=======
+    --secondary-font-family:'Carattere', cursive;
+    --teritary-font-family:'Sriracha', cursive;
+>>>>>>> 1243590e035fe23e3c7b17e9d0b71f4b81c379c7
 }
 
 
