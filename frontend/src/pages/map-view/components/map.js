@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import mapboxgl from "!apbox-gl";
+import mapboxgl from "apbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 const initialLocation = {
