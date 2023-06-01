@@ -1,9 +1,4 @@
 import LocationDAO from "../../../dao/location.DAO.js";
-import UserDAO from "../../../dao/userDAO.js";
-import { PythonShell } from "python-shell";
-import GetPath from "../../../utilities/getPath.js";
-import * as fs from "fs";
-import path from "path";
 import { ObjectId } from "mongodb";
 
 
@@ -36,6 +31,4 @@ export default class LocationController {
             return res.status(500).json({ message: "internal server error" })
         }
     }
-    
-    static async recommendTour(req, res, next) {};
 }; 

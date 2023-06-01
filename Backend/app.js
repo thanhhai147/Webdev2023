@@ -7,7 +7,9 @@ import path from "path";
 import { fileURLToPath } from "url";
 import auth from "./api/v1/routes/auth.route.js";
 import user from "./api/v1/routes/user.route.js";
-import location from "./api/v1/routes/location.route.js"
+import location from "./api/v1/routes/location.route.js";
+import street from "./api/v1/routes/street.route.js";
+import transport from "./api/v1/routes/transport.route.js";
 import ErrorHandle from "./error/err-handle.js";
 
 dotenv.config();
@@ -48,6 +50,8 @@ app.use(express.static(path.join(__dirname, "../frontend/public")));
 app.use("/api/v1/auth", auth);
 app.use("/api/v1/user", user);
 app.use("/api/v1/location", location);
+app.use("/api/v1/street", street);
+app.use("/api/v1/transport", transport);
 app.use("*", (req, res) => res.status(404).json({ error: "Page not found" }));
 
 app.use(ErrorHandle.errResponse); 

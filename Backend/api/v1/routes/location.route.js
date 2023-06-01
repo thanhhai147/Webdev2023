@@ -12,7 +12,5 @@ router.route("/get-one-location").get(AuthMiddleware.verifyToken, useError(Locat
 router.route("/get-multiple-locations").get(AuthMiddleware.verifyToken, useError(LocationController.getMultipleLocations));
 // get all locations
 router.route("/get-all-locations").get(AuthMiddleware.verifyToken, useError(LocationController.getAllLocations));
-// get recommended tour result
-router.route("/recommend-tour").get(AuthMiddleware.verifyToken, useError(LocationController.recommendTour));
 
 export default router;
