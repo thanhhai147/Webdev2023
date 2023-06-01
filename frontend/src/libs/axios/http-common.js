@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const authApi = axios.create({
-    baseURL: "http://localhost:5000/api/v1/auth",
+    baseURL: "https://thanhhai-2023-i4a0.onrender.com/api/v1/auth",
     headers: {
         "Content-type": "application/json",
     },
@@ -10,7 +10,7 @@ const authApi = axios.create({
 });
 
 const userApi = axios.create({
-    baseURL: "http://localhost:5000/api/v1/user",
+    baseURL: "https://thanhhai-2023-i4a0.onrender.com/api/v1/user",
     headers: {
         "Content-type": "application/json",
     },
@@ -25,7 +25,7 @@ const provinceApi = axios.create({
 });
 
 const locationApi = axios.create({
-    baseURL: "http://localhost:5000/api/v1/location",
+    baseURL: "https://thanhhai-2023-i4a0.onrender.com/api/v1/location",
     headers: {
         "Content-type": "application/json",
     },
@@ -33,7 +33,7 @@ const locationApi = axios.create({
 })
 
 const streetApi = axios.create({
-    baseURL: "http://localhost:5000/api/v1/street",
+    baseURL: "https://thanhhai-2023-i4a0.onrender.com/api/v1/street",
     headers: {
         "Content-type": "application/json",
     },
@@ -41,7 +41,7 @@ const streetApi = axios.create({
 })
 
 const transportApi = axios.create({
-    baseURL: "http://localhost:5000/api/v1/transport",
+    baseURL: "https://thanhhai-2023-i4a0.onrender.com/api/v1/transport",
     headers: {
         "Content-type": "application/json",
     },
@@ -49,7 +49,7 @@ const transportApi = axios.create({
 })
 
 const tourApi = axios.create({
-    baseURL: "https://localhost:5000/api/v1/tour",
+    baseURL: "https://thanhhai-2023-i4a0.onrender.com/api/v1/tour",
     headers: {
         "Content-type": "application/json",
     },
@@ -57,7 +57,7 @@ const tourApi = axios.create({
 })
 
 const fashionApi = axios.create({
-    baseURL: "https://localhost:5000/api/v1/fashion",
+    baseURL: "https://thanhhai-2023-i4a0.onrender.com/api/v1/fashion",
     headers: {
         "Content-type": "application/json",
     },
