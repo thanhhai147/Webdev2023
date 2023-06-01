@@ -79,14 +79,14 @@ export default class AuthController {
       const refreshToken = this.generateRefreshToken(storedUser);
       let result = await UserDAO.updateRefreshToken(storedUser, refreshToken);
       res.cookie("refreshToken", refreshToken, {
-        httpOnly: true,
+        httpOnly: false,
         sameSite: "strict",
         secure: false,
         path: "/",
       });
       const accessToken = this.generateAccessToken(storedUser);
       res.cookie("accessToken", accessToken, {
-        httpOnly: true,
+        httpOnly: false,
         sameSite: "strict",
         secure: false,
         path: "/",
@@ -119,14 +119,14 @@ export default class AuthController {
         console.log("refresh token")
         await UserDAO.updateRefreshToken(user, newRefreshToken);
         res.cookie("refreshToken", newRefreshToken, {
-          httpOnly: true,
+          httpOnly: false,
           sameSite: "strict",
           secure: false,
           path: "/",
         });
 
         res.cookie("accessToken", newAccessToken, {
-          httpOnly: true,
+          httpOnly: false,
           sameSite: "strict",
           secure: false,
           path: "/",
