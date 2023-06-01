@@ -13,6 +13,7 @@
 }
 .form-label p {
     font-family: var(--teritary-font-family);
+    color: var(--black-color)
 }
 .find-btn {
     font-family: var(--secondary-font-family);

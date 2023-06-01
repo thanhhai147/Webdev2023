@@ -104,7 +104,7 @@ export default function MapView() {
     return (
         <div className='map-view-container mt-5'>
             <div className='container'>
-                <div className="title-container">Lịch trình thông minh</div>
+                <div className="title-container">Lịch Trình Thông Minh</div>
                 <hr className="line-title"/>
                 <div className='row'>
                     <MapRender filter={filter} map={map} />

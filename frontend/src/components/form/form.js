@@ -146,6 +146,7 @@ const Form = ({formState, setFormState, formTypes, region, location, tour, setTo
         try {
             const chosenLocation = location.find(ele => ele['name'] === formState['location']['name'])
             const query = `locationId=${chosenLocation['_id']}&budget=${formState['budget']['max']}&time_vault=${formState['timeVault']['max']}`
+            console.log(query)
             const result = await recommendTour(query)
             if(result.status === 200) {
                 const allTours = await getAllTours()
@@ -204,7 +205,7 @@ const Form = ({formState, setFormState, formTypes, region, location, tour, setTo
                 </div>
             </div>
             <div className="btn-container d-flex flex-row justify-content-end">
-                <button className="find-btn no-border primary-bg-color pt-2 pb-2 ps-4 pe-4 rounded-5 fw-semibold background-color" onClick={findTour}>Tìm chuyến đi</button>
+                <button className="find-btn no-border primary-bg-color pt-2 pb-2 ps-4 pe-4 rounded-5 fs-6 fw-semibold background-color" onClick={findTour}>Tìm chuyến đi</button>
             </div>
         </div>
     );

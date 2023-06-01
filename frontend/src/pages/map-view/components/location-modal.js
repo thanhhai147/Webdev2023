@@ -22,7 +22,7 @@ export default function LocationModal({ location }) {
                         </div>
                     </div>
                     <div className="modal-footer">
-                        <button type="button" className="btn primary-bg-color background-color rounded-5 ps-4 pe-4 fw-semibold" data-bs-dismiss="modal">Close</button>
+                        <button type="button" className="btn primary-bg-color secondary-color rounded-5 ps-4 pe-4" data-bs-dismiss="modal">Close</button>
                     </div>
                     </div>
                 </div>

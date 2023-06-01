@@ -17,14 +17,6 @@ const userApi = axios.create({
     withCredentials: true,
 });
 
-const realEstateApi = axios.create({
-    baseURL: "http://localhost:5000/api/v1/real-estate",
-    headers: {
-        "Content-type": "application/json",
-    },
-    withCredentials: true,
-});
-
 const provinceApi = axios.create({
     baseURL: "https://provinces.open-api.vn/api",
     headers: {
@@ -72,5 +64,5 @@ const fashionApi = axios.create({
     withCredentials: true,
 })
 
-export { authApi,  userApi, realEstateApi, provinceApi, locationApi, tourApi, fashionApi, streetApi, transportApi};
+export { authApi,  userApi, provinceApi, locationApi, tourApi, fashionApi, streetApi, transportApi};
 
