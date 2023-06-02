@@ -78,9 +78,13 @@ export default class AuthController {
     if (!unique && compare) {
       const refreshToken = this.generateRefreshToken(storedUser);
       let result = await UserDAO.updateRefreshToken(storedUser, refreshToken);
-      res.cookie("refreshToken", refreshToken);
+      res.cookie("refreshToken", refreshToken, {
+        httpOnly: false
+      });
       const accessToken = this.generateAccessToken(storedUser);
-      res.cookie("accessToken", accessToken);
+      res.cookie("accessToken", accessToken, {
+        httpOnly: false
+      });
       let returnData = {
         email: others.email,
         fullname: others.fullname,
@@ -108,9 +112,13 @@ export default class AuthController {
         const newRefreshToken = this.generateRefreshToken(user);
         console.log("refresh token")
         await UserDAO.updateRefreshToken(user, newRefreshToken);
-        res.cookie("refreshToken", newRefreshToken);
+        res.cookie("refreshToken", newRefreshToken, {
+          httpOnly: false
+        });
 
-        res.cookie("accessToken", newAccessToken);
+        res.cookie("accessToken", newAccessToken, {
+          httpOnly: false
+        });
 
         res.status(200).json({ data: user, message: "refresh tokens success" });
     });
