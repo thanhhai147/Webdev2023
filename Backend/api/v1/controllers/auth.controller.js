@@ -78,11 +78,11 @@ export default class AuthController {
     if (!unique && compare) {
       const refreshToken = this.generateRefreshToken(storedUser);
       let result = await UserDAO.updateRefreshToken(storedUser, refreshToken);
-      res.cookie("refreshToken", refreshToken, {
+      await res.cookie("refreshToken", refreshToken, {
         "HttpOnly": false
       });
       const accessToken = this.generateAccessToken(storedUser);
-      res.cookie("accessToken", accessToken, {
+      await res.cookie("accessToken", accessToken, {
         "HttpOnly": false
       });
       let returnData = {
@@ -110,13 +110,12 @@ export default class AuthController {
 
         const newAccessToken = this.generateAccessToken(user);
         const newRefreshToken = this.generateRefreshToken(user);
-        console.log("refresh token")
         await UserDAO.updateRefreshToken(user, newRefreshToken);
-        res.cookie("refreshToken", newRefreshToken, {
+        await res.cookie("refreshToken", newRefreshToken, {
           "HttpOnly": false
         });
 
-        res.cookie("accessToken", newAccessToken, {
+        await res.cookie("accessToken", newAccessToken, {
           "HttpOnly": false
         });
 
