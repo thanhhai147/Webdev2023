@@ -15,7 +15,7 @@ export default class AuthMiddleware {
     
     static verifyToken = (req, res, next) => {
         const accessToken = req.cookies.accessToken;
-        console
+        console.log(req.cookies)
         if(accessToken) {
             jwt.verify(accessToken, process.env.JWT_ACCESS_KEY, (err, user) => {
                 if(err) return res.status(403).json({ message: "invalid token" });

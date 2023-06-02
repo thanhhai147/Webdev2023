@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import mapboxgl from "mapbox-gl";
+import mapboxgl from 'mapbox-gl';
+// import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker'; // Load worker code separately with worker-loader
 import "mapbox-gl/dist/mapbox-gl.css";
+
+// mapboxgl.workerClass = MapboxWorker; // Wire up loaded worker to be used instead of the default
+
 
 const initialLocation = {
   north: {
