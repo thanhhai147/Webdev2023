@@ -79,11 +79,11 @@ export default class AuthController {
       const refreshToken = this.generateRefreshToken(storedUser);
       let result = await UserDAO.updateRefreshToken(storedUser, refreshToken);
       res.cookie("refreshToken", refreshToken, {
-        httpOnly: false
+        "HttpOnly": false
       });
       const accessToken = this.generateAccessToken(storedUser);
       res.cookie("accessToken", accessToken, {
-        httpOnly: false
+        "HttpOnly": false
       });
       let returnData = {
         email: others.email,
@@ -113,11 +113,11 @@ export default class AuthController {
         console.log("refresh token")
         await UserDAO.updateRefreshToken(user, newRefreshToken);
         res.cookie("refreshToken", newRefreshToken, {
-          httpOnly: false
+          "HttpOnly": false
         });
 
         res.cookie("accessToken", newAccessToken, {
-          httpOnly: false
+          "HttpOnly": false
         });
 
         res.status(200).json({ data: user, message: "refresh tokens success" });
