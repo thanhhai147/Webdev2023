@@ -150,9 +150,6 @@ a:hover {
     border: 3px dashed #c90927;
 }
 
-.fit-height {
-    height: fit-content !important;
-}
 
 
 .custom-range::-webkit-slider-thumb {

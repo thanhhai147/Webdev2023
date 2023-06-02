@@ -1,6 +1,7 @@
 import UserDAO from "../../../dao/userDAO.js";
 import { PythonShell } from "python-shell";
 import GetPath from "../../../utilities/getPath.js";
+import { ObjectId } from "mongodb";
 
 export default class UserController {
     static async getAllTours(req, res, next) {
@@ -21,15 +22,15 @@ export default class UserController {
                 pythonOptions: ["-u"], 
                 pythonPath: GetPath.pythonPath,
                 scriptPath: GetPath.pythonScript,
-                args: [req.user._id, req.body.locationId, Number(req.body.budget), Number(req.body.time_vault)],
+                args: [req.user._id, req.query.locationId, Number(req.query.budget), Number(req.query.time_vault)], 
             };
     
             PythonShell.run("tour_ML.py", options, (err, result) => {
                 if (err) {
                     console.error(err);
-                    res.status(500).json({ message: "find tour fail" });
+                    return res.status(500).json({ message: "find tour fail" });
                 } else {
-                    res.status(200).json({ message: "find tour success" });
+                    return res.status(200).json({ message: "recommend tour success" })
                 }
             });
         } catch(e) {

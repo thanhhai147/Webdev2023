@@ -118,13 +118,22 @@ class Tours:
         
 def findNextTour(current_tour: Tour, last_location_id, current_street_id, current_transport_id, budget, time_remaining):
     if (budget == 0 or time_remaining == 0): return current_tour
+    if (str(current_street_id) in current_tour.getStreet()): return current_tour
     # get current street
     current_street = DB.street.find_one({ '_id': ObjectId(current_street_id) })
     # get current location
-    current_location_id = current_street['end_location_id'] if last_location_id != current_street['end_location_id'] else current_street['start_location_id']
+    if str(last_location_id) != str(current_street['end_location_id']):
+        current_location_id = str(current_street['end_location_id'])
+    else:
+        current_location_id = str(current_street['start_location_id'])
+    
+    if(str(current_location_id) in current_tour.getLocation()): return current_tour
+    
     current_location = DB.location.find_one({ '_id': ObjectId(current_location_id) })
     # get current transport
     current_transport = DB.transport.find_one({ '_id': ObjectId(current_transport_id) })
+    
+    if(not current_location or not current_transport): return current_tour
     
     # total price and time for current location and street
     total_price = current_location['price'] + current_transport['price']
@@ -149,12 +158,17 @@ def findNextTour(current_tour: Tour, last_location_id, current_street_id, curren
     
     # find next locations with multiple streets and multiple transports
     for street_id in current_location['street_ids']:
-        if(street_id != current_street_id): 
+        if(str(street_id) not in updated_tour.getStreet()): 
             # get this street
             next_street = DB.street.find_one({ '_id': ObjectId(street_id) })
-            for transport_id in next_street['transport_ids']:
-                return findNextTour(updated_tour, current_location_id, street_id, transport_id, updated_budget, updated_time_remaining)
-    return current_tour
+            if(str(current_location_id) != next_street['end_location_id']):
+                next_location_id = str(next_street['end_location_id'])
+            else:
+                next_location_id = str(next_street['start_location_id'])
+            if(str(next_location_id) not in updated_tour.getLocation()):
+                for transport_id in next_street['transport_ids']:
+                    return findNextTour(updated_tour, str(current_location_id), str(street_id), str(transport_id), updated_budget, updated_time_remaining)
+    return updated_tour
 
 def findAvailabelTours(start_location_id, budget, time_vault):  
     tour_cases = Tours()
@@ -175,7 +189,7 @@ def findAvailabelTours(start_location_id, budget, time_vault):
     for street_id in start_location['street_ids']:
         next_street = DB.street.find_one({ '_id': ObjectId(street_id) })
         for transport_id in next_street['transport_ids']:
-            new_tour = findNextTour(start_tour, start_location_id, street_id, transport_id, updated_budget, updated_time_vault)
+            new_tour = findNextTour(start_tour, str(start_location_id), str(street_id), str(transport_id), updated_budget, updated_time_vault)
             tour_cases.addTour(new_tour)
     
     return tour_cases

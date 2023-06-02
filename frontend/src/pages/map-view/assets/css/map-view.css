@@ -40,9 +40,6 @@
 .tour-showcase-container {
     height: 50vh;
 }
-.tour-showcase-wrapper {
-
-}
 .tour-showcase-title {
     font-size: 44px;
     font-weight: 500;
@@ -61,10 +58,10 @@
     height: 200px;
 }
 .line {
-    border: 2.5px solid var(--background-color)
+    border: 2.5px solid var(--primary-color)
 }
 .modal-title {
-    font-size: 44px;
+    font-size: 28px;
     font-weight: 500;
     font-family: var(--secondary-font-family);
     letter-spacing: 2px;
@@ -76,7 +73,7 @@
 }
 
 .modal-location-name {
-    font-size: 30px
+    font-size: 34px
 }
 
 .map-view-container{
